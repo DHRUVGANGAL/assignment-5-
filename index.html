@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+
+        }
+        header{
+            height: 100px;
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 68px;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+
+        }
+        ul li a {
+            padding: 0 20px;
+            text-decoration: none;
+            color: #3a3a3a;
+            display: inline-block;
+        }
+        .nav::after{
+            content:'' ;
+            display: block;
+            height: 4px;
+            width: 0;
+            background: #d86609;
+            transition: 0.5s;
+        }
+        .nav:hover::after{
+            width: 100%;
+        }
+        .sign-up{
+            padding:10px 20px ;
+            border-radius: 50px;
+            background: #da8743;
+            color: #fff;
+            outline: none;
+            border: none;
+            
+        }
+        .sign-up:hover{
+            background: #d86609;
+        }
+
+ 
+        main{
+            display: flex;
+            /* border: 1px solid red; */
+            height: calc(100vh - 100px);
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-img{
+            max-width: 550px;
+            height: auto;
+        }
+        .content-left{
+            width: 30%;
+
+        }
+        main h1{
+            font-size: 54px;
+            color: #133B4F;
+            text-transform: uppercase;
+        }
+        main h2{
+            font: 25px;
+            color: #d86609;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+        }
+        main p{
+            font-size: 14px;
+            font-weight: 400;
+            color: #333;
+            line-height: 31.5px;
+            margin: 30px 0;
+        }
+        .cta{
+            padding: 15px 30px;
+            background: #da8743;
+            color: #fff;
+            outline: none;
+            border: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 50px;
+        }
+        .cta:hover{
+            background: #d86609;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/logo.png" alt="Logo" width="75px">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href=""class="nav">Home</a></li>
+                <li><a href=""class="nav">Services</a></li>
+                <li><a href=""class="nav">About</a></li>
+                <li><a href=""class="nav">Contact</a></li>
+                <li><a href=""class="nav">FAQ</a></li>
+                <li><a href="" class="sign-up">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-left">
+            <h1>stock</h1>
+            <h2>Marketing</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aperiam quibusdam sit, sunt similique ipsa facere fugit ratione assumenda, facilis consequuntur numquam illum.</p>
+            <button class="cta">Learn More</button>
+        </div>
+        <div class="content-right">
+            <img src="/banner.png" alt="banner" class="hero-img">
+        </div>
+    </main>
+    
+</body>
+</html>
